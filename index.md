@@ -1,16 +1,15 @@
-# Welcome to Jiatong Li's homepage!
-
+Welcome to Jiatong Li's homepage!
 ---
 
 ## Index
 - [Welcome to Jiatong Li's homepage!](#welcome-to-jiatong-lis-homepage)
-  - [Index](#index)
-  - [About me](#about-me)
-  - [My personal CV](#my-personal-cv)
-  - [About my research](#about-my-research)
-    - [Cognitive diagnosis and its application in intelligent education](#cognitive-diagnosis-and-its-application-in-intelligent-education)
-  - [Awards](#awards)
-  - [Study notes](#study-notes)
+- [Index](#index)
+- [About me](#about-me)
+- [My personal CV](#my-personal-cv)
+- [About my research](#about-my-research)
+  - [Cognitive diagnosis and its application in intelligent education](#cognitive-diagnosis-and-its-application-in-intelligent-education)
+- [Awards](#awards)
+- [Study notes](#study-notes)
 
 ## About me 
 
@@ -29,9 +28,12 @@ I am currently a junior major in **data science** in **University of Science and
 The research focuses on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. Given student list and students' performance record (including course video watching record, exam answer record, etc.), I research on how to model students and predict their future performance (i.e. score in exams).
 
 ## Awards
-* Outstanding Student Scholarship Silver Award<p align="right"> ——2019.09</p>
-* Outstanding Student Scholarship Silver Award<p align="right"> ——2020.09</p>
-* National First Prize in the Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM) **(Top %1)**<p align="right"> ——2019.10</p>
+* Outstanding Student Scholarship Silver Award
+  <p align="right"> ——2019.09</p>
+* Outstanding Student Scholarship Silver Award
+  <p align="right"> ——2020.09</p>
+* National First Prize in the Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM) **(Top %1)**
+  <p align="right"> ——2019.10</p>
 
 ## Study notes
 
