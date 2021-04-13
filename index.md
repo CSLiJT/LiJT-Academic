@@ -18,11 +18,11 @@ I am currently a sophomore major in **data science** in **University of Science 
 
 ## My personal CV
 * English version: [click here](./My_personal_CV/LiJiatong.pdf)
-* Chinese version: undergoing...
+* Chinese version: [click here](./My_personal_CV/LiJiatong_Chinese.pdf)
 
 ## About my research
 ### Cognitive diagnosis and its application in intelligent education
-The research focuses on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. Given student list and students' performance record(including course video watching record, exam answer record, etc.), I research on how to model students and predict their future performance(i.e. score on exams).
+The research focuses on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. Given student list and students' performance record (including course video watching record, exam answer record, etc.), I research on how to model students and predict their future performance (i.e. score in exams).
 
 ## Study notes
 
