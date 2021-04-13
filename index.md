@@ -1,4 +1,5 @@
-Welcome to Jiatong Li's homepage!
+## Welcome to Jiatong Li's homepage!
+
 ---
 
 ## Index
