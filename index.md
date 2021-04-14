@@ -50,8 +50,8 @@ The research focuses on the use of deep learning in **cognitive diagnosis**, whi
   <p align="right"> ——2020.09</p>
 
 ## Study notes
-* Information Theory
-* Java
+* [Information Theory](./Study_Notes/Info_theory/dir.md)
+* [Java](./Study_Notes/Java/dir.md)
 * ...
 
 ---
