@@ -42,7 +42,7 @@ The research focuses on the use of deep learning in **cognitive diagnosis**, whi
 
 [(Back to top)](#welcome-to-jiatong-lis-homepage)
 
-`Pageview =`&nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>
+`Pageview =`&nbsp;<span id="{{ index.url }}" class="leancloud_visitors" data-flag-title="{{ index.title }}"> - </span>
 
 <!-- 同时兼容http与https -->
 <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
