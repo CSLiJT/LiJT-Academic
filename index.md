@@ -9,6 +9,11 @@
     })();
     </script>
 </head>
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
 
 ## Welcome to Jiatong Li's homepage!
@@ -29,9 +34,13 @@
 
 <img src="./My_personal_CV/profile.jpg" width="150" align="right">
 
-* E-mail: satosasara[AT]mail[dot]ustc[dot]edu[dot]cn
-  
-I am currently a junior major in **data science** in **University of Science and Technology of China** (USTC). Before that, I lived in Canton for over 15 years. I like delicious food, gym and classic musics! After studying in the school of data science, I found my interest in the research of machine learning, and I am now doing research on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. 
+<i class="fab fa-linkedin"></i> www.linkedin.com/in/LiJT-355b50190
+
+<i class="far fa-envelope"></i> <satosasara@mail.ustc.edu.cn>
+
+ <img src="./icon/ustc.png/" width="100" hspace = "10" align="left">
+ 
+I am currently a junior major in **data science** in [**University of Science and Technology of China**](https://www.ustc.edu.cn/) (USTC). Before that, I lived in Canton for over 15 years. I like delicious food, gym and classic musics! After studying in the school of data science, I found my interest in the research of machine learning, and I am now doing research on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. 
 
 ## My personal CV
 * English version: [click here](./My_personal_CV/LiJiatong.pdf)
