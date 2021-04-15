@@ -6,8 +6,10 @@ H(X) \leq \alpha Ef(X) + \ln\sum_{u\in\mathcal{X}}e^{-\alpha f(u)}
 $$
 proof. 
 $$
-\alpha Ef(X) + \ln\sum_{u\in\mathcal{X}}e^{-\alpha f(u)} - H(X)\\
-= \sum_{x\in\mathcal{X}}p(x)\left[\alpha f(x)  + \ln\sum_{u\in\mathcal{X}}e^{-\alpha f(u)} + \ln p(x) \right]\\
-= \sum_{x\in\mathcal{X}}p(x)\ln\left\{ \frac{p(x)}{e^{-\alpha f(x)}/\sum_{u\in\mathcal{X}}e^{-\alpha f(u)}} \right\}\\
-= D(p(x)\|q(x)) \geq 0
+\begin{aligned}
+& \alpha Ef(X) + \ln\sum_{u\in\mathcal{X}}e^{-\alpha f(u)} - H(X)\\
+=& \sum_{x\in\mathcal{X}}p(x)\left[\alpha f(x)  + \ln\sum_{u\in\mathcal{X}}e^{-\alpha f(u)} + \ln p(x) \right]\\
+=& \sum_{x\in\mathcal{X}}p(x)\ln\left\{ \frac{p(x)}{e^{-\alpha f(x)}/\sum_{u\in\mathcal{X}}e^{-\alpha f(u)}} \right\}\\
+=& D(p(x)\|q(x)) \geq 0
+\end{aligned}
 $$
