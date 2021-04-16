@@ -15,35 +15,6 @@
 </head> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-<head><style>
-dl > dd:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 50px;
-    width: 2px;
-    height: 5%;  /*时间线的高度需要手动更改*/
-    z-index: 400;
-}
-dl > dt:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #5e0900; /* was #22c0e8 */
-    left: 37px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-dl >dt, dl > dd {
-    margin: 6pt 0; /* was 20px */
-    padding-left: 60px;
-}
-</style></head>
-
 
 ## Welcome to Jiatong Li's homepage!
 
