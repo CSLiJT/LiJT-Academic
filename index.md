@@ -15,6 +15,38 @@
 </head> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
+<head><style>
+dl {
+    list-style-type: none;
+}
+dl:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+dl > dt:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #5e0900; /* was #22c0e8 */
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+dl >dt, dl > dd {
+    margin: 6pt 0; /* was 20px */
+    padding-left: 60px;
+}
+</style></head>
+
 
 ## Welcome to Jiatong Li's homepage!
 
@@ -62,6 +94,37 @@ The research focuses on the use of deep learning in **cognitive diagnosis**, whi
 * [Information Theory](./Study_Notes/Info_theory/dir.md)
 * [Java](./Study_Notes/Java/dir.md)
 * ...
+
+<dl>
+<dt>1066</dt>
+<dd> September. Harald Hardrada, King of Norway, invades England</dd>
+
+<dd> October. William of Normandy defeats and kills Harold II at Hastings</dd>
+
+<dt>1070</dt>
+<dd> William the Conqueror subdues the north of England</dd>
+
+<dd> First Norman stone castle is built in Wales</dd>
+
+<dt>1076</dt>
+<dd> &#8216;Revolt of the Earls&#8217; ends with the execution of Waltheof, Earl of Northumbria</dd>
+
+<dt>1077</dt>
+<dd> Bayeux Tapestry illustrating the Battle of Hastings is completed</dd>
+
+<dt>1085</dt>
+<dd> Domesday Book is instituted to survey the English lands of William the Conqueror</dd>
+
+<dt>1086</dt>
+<dd> Landholders swear loyalty to William the Conqueror at Salisbury</dd>
+
+<dt>1087</dt>
+<dd> William the Conqueror dies at Rouen, Normandy</dd>
+
+<dt>1087</dt>
+<dd> William II is crowned at Westminster Abbey</dd>
+</dl>
+
 
 ---
 
