@@ -1,6 +1,8 @@
+<head>
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+</head>
 
 # Part IV 信息推断
 
@@ -40,3 +42,13 @@ $$
 $$
 R_j(\delta) = C_{1,j}p_j(\mathcal{X}_1) + C_{0,j}p_j(\mathcal{X}_1^c)
 $$
+
+注意：每一个假设$H_j$都有一个它自己的条件损失！
+
+则**Bayes risk**定义为
+
+$$
+r(\delta) = \pi_0 R_0(\delta) + \pi_1 R_1(\delta)
+$$
+
+\# $\mathcal{X}_1 \to \delta \to R_j \to r$
