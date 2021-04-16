@@ -1,2 +1,3 @@
 # Directions
-* [note1](./note1.md)
+* [Part II](./part2.md)
+* [Part IV](./part4.md)
