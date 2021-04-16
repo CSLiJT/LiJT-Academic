@@ -16,9 +16,6 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
 <head><style>
-dl {
-    list-style-type: none;
-}
 dl:before {
     content: ' ';
     background: #d4d9df;
@@ -26,7 +23,7 @@ dl:before {
     position: absolute;
     left: 29px;
     width: 2px;
-    height: 100%;
+    height: 15%;  /*时间线的高度需要手动更改*/
     z-index: 400;
 }
 dl > dt:before {
@@ -56,6 +53,7 @@ dl >dt, dl > dd {
 - [Welcome to Jiatong Li's homepage!](#welcome-to-jiatong-lis-homepage)
 - [Index](#index)
 - [About me](#about-me)
+- [Education Experience](#education-experience)
 - [My personal CV](#my-personal-cv)
 - [About my research](#about-my-research)
   - [Cognitive diagnosis and its application in intelligent education](#cognitive-diagnosis-and-its-application-in-intelligent-education)
@@ -73,6 +71,12 @@ dl >dt, dl > dd {
  <img src="./icon/ustc.png" width="80" align="left">
  
 I am currently a junior major in **data science** in [**University of Science and Technology of China**](https://www.ustc.edu.cn/) (USTC). Before that, I lived in Canton for over 15 years. I like delicious food, gym and classic musics! After studying in the school of data science, I found my interest in the research of machine learning, and I am now doing research on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. 
+
+## Education Experience
+<dl>
+<dt>2015.9 - 2018.6</dt> <dd> Guangzhou No.2 Middle School</dd>
+<dt>2018.9 - Present</dt> <dd> University of Science and Technology of China</dd>
+</dl>
 
 ## My personal CV
 * English version: [click here](./My_personal_CV/LiJiatong.pdf)
@@ -94,36 +98,6 @@ The research focuses on the use of deep learning in **cognitive diagnosis**, whi
 * [Information Theory](./Study_Notes/Info_theory/dir.md)
 * [Java](./Study_Notes/Java/dir.md)
 * ...
-
-<dl>
-<dt>1066</dt>
-<dd> September. Harald Hardrada, King of Norway, invades England</dd>
-
-<dd> October. William of Normandy defeats and kills Harold II at Hastings</dd>
-
-<dt>1070</dt>
-<dd> William the Conqueror subdues the north of England</dd>
-
-<dd> First Norman stone castle is built in Wales</dd>
-
-<dt>1076</dt>
-<dd> &#8216;Revolt of the Earls&#8217; ends with the execution of Waltheof, Earl of Northumbria</dd>
-
-<dt>1077</dt>
-<dd> Bayeux Tapestry illustrating the Battle of Hastings is completed</dd>
-
-<dt>1085</dt>
-<dd> Domesday Book is instituted to survey the English lands of William the Conqueror</dd>
-
-<dt>1086</dt>
-<dd> Landholders swear loyalty to William the Conqueror at Salisbury</dd>
-
-<dt>1087</dt>
-<dd> William the Conqueror dies at Rouen, Normandy</dd>
-
-<dt>1087</dt>
-<dd> William II is crowned at Westminster Abbey</dd>
-</dl>
 
 
 ---
