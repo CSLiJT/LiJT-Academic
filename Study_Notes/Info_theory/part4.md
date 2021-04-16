@@ -74,3 +74,22 @@ r(\delta) = \pi_0 R_0(\delta) + \pi_1 R_1(\delta)
 $$
 
 \# $\mathcal{X}_1 \to \delta \to R_j \to r$
+
+对于 randomized dicision rule 的情况，注意到
+
+$$
+\begin{aligned}
+& \sum_{x\in\mathcal{X}}\hat{\delta}(x)p_j(x)\\
+=& \sum_{x\in\mathcal{X}}P(H_j\|X = x)P(X = x\|H_j)
+\end{aligned}
+$$
+
+\# 先验$\times$后验？没太看懂，先这么记着
+
+$$
+R_j(\hat{\delta}) = C_{1,j}\sum_{x\in\mathcal{X}}\hat{\delta}(x)p_j(x) + C_{0,j}\sum_{x\in\mathcal{X}}\left[ 1 - \hat{\delta}(x)\right]p_j(x)
+$$
+
+$$
+r(\hat{\delta}) = \pi_0 R_0(\hat{\delta}) + \pi_1 R_1(\hat{\delta})
+$$
