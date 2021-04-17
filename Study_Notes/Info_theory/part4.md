@@ -99,10 +99,12 @@ $$
 * 与 Bayesian formulation 平行关系
 * 不考虑两种假设的香烟分布，也不考虑任何决策损失
 * 关注两类错误
+ 
   |True\Decision|$H_0$|$H_1$|
   |:---|:---|:---|
   |$H_0$| \ | Type I |
   |$H_1$| Type II | \ |
+  
   * $P(\text{Type I error}) = P_F(\hat{\delta})$
   * $P(\text{Type II error}) = P_M(\hat{\delta})$
     * "Power of test" $P_D(\hat{\delta}) = 1 - P_M(\hat{\delta})$ 
