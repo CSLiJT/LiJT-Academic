@@ -80,11 +80,12 @@ $$
 $$
 \begin{aligned}
 & \sum_{x\in\mathcal{X}}\hat{\delta}(x)p_j(x)\\
-=& \sum_{x\in\mathcal{X}}P(H_j\|X = x)P(X = x\|H_j)
+=& \sum_{x\in\mathcal{X}}P(\delta = 1\|X = x)P(X = x\|H_j)\\
+=& p_j(\delta = 1)
 \end{aligned}
 $$
 
-\# 先验$\times$后验？没太看懂，先这么记着
+\# 参照 Neyman-Pearson 中，第I类错误与检验功效的定义
 
 $$
 R_j(\hat{\delta}) = C_{1,j}\sum_{x\in\mathcal{X}}\hat{\delta}(x)p_j(x) + C_{0,j}\sum_{x\in\mathcal{X}}\left[ 1 - \hat{\delta}(x)\right]p_j(x)
@@ -92,4 +93,68 @@ $$
 
 $$
 r(\hat{\delta}) = \pi_0 R_0(\hat{\delta}) + \pi_1 R_1(\hat{\delta})
+$$
+
+### Neyman-Pearson forumulation
+* 与 Bayesian formulation 平行关系
+* 不考虑两种假设的香烟分布，也不考虑任何决策损失
+* 关注两类错误
+  |True\Decision|$H_0$|$H_1$|
+  |:---|:---|:---|
+  |$H_0$| \ | Type I |
+  |$H_1$| Type II | \ |
+  * $P(\text{Type I error}) = P_F(\hat{\delta})$
+  * $P(\text{Type II error}) = P_M(\hat{\delta})$
+    * "Power of test" $P_D(\hat{\delta}) = 1 - P_M(\hat{\delta})$ 
+* Neyman-Pearson 的设计准则决定于以下的最优化问题(确保第一类错误概率小于置信度$\alpha$的前提下，最大化检验的功效=最小化第二类错误概率)
+
+$$
+\max_{\hat{\delta}} P_D(\hat{\delta}),\\
+\text{s.t. }P_F(\hat{\delta})\leq \alpha
+$$
+
+  注意到
+
+$$
+\begin{aligned}
+P_F(\hat{\delta}) &= p_0(\delta = 1)\text{, 对 x 用全概率公式展开}\\
+&= \sum_{x\in\mathcal{X}}\hat{\delta}(x)p_0(x)\\
+P_D(\hat{\delta}) &= p_1(\delta = 1)\\
+&= \sum_{x\in\mathcal{X}}\hat{\delta}(x)p_1(x)
+\end{aligned}
+$$
+
+  它们都与 $\hat{\delta}(x)$ 成线性关系
+
+## Optimal solution
+
+* 问题：根据上文给出的两种formulation，怎样寻找最优的$\delta$决策规则？
+* 换言之，怎样寻找 $x\in\mathcal{X}$ 的决策边界 $\mathcal{X}_1$
+
+## Optimal solution: Bayesian formulation
+先考虑 deterministic decision rules 的情况
+
+$$
+\begin{aligned}
+&r(\delta)\\
+=& \text{Const} + \sum_{x\in\mathcal{X}_1}[\pi_{0}(C_{1,0}-C_{0,0})p_0(x) + \pi_{1}(C_{1,1}-C_{0,1})p_1(x) ]\\
+\end{aligned}
+$$
+
+因此最优的$\delta$需要满足
+
+$$
+\pi_{0}(C_{1,0}-C_{0,0})p_0(x) + \pi_{1}(C_{1,1}-C_{0,1})p_1(x) \leq 0\text{ if }x\in\mathcal{X}_1\text{ and }>0\text{ otherwise}
+$$
+
+这类决策规则被称为似然比检验(likelihood ratio test)，其定义为
+
+$$
+L(x) = \frac{p_1(x)}{p_0(x)},x\in\mathcal{X}
+$$
+
+因此最优的 $\delta$ 对应的 $\mathcal{X}_1$ 为
+
+$$
+\mathcal{X}_1 = \left\{ x\in \mathcal{X}: \frac{p_1(x)}{p_0(x)}\geq\frac{\pi_0}{\pi_1} \right\}
 $$
