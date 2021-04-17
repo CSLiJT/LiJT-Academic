@@ -95,7 +95,7 @@ $$
 r(\hat{\delta}) = \pi_0 R_0(\hat{\delta}) + \pi_1 R_1(\hat{\delta})
 $$
 
-### Neyman-Pearson forumulation
+### Neyman-Pearson formulation
 * 与 Bayesian formulation 平行关系
 * 不考虑两种假设的香烟分布，也不考虑任何决策损失
 * 关注两类错误
@@ -133,7 +133,7 @@ $$
 * 问题：根据上文给出的两种formulation，怎样寻找最优的$\delta$决策规则？
 * 换言之，怎样寻找 $x\in\mathcal{X}$ 的决策边界 $\mathcal{X}_1$
 
-## Optimal solution: Bayesian formulation
+### Optimal solution: Bayesian formulation
 先考虑 deterministic decision rules 的情况
 
 $$
@@ -161,4 +161,53 @@ $$
 \mathcal{X}_1 = \left\{ x\in \mathcal{X}: \frac{p_1(x)}{p_0(x)}\geq\frac{\pi_0}{\pi_1} \right\}
 $$
 
-## Optimal solution: Neyman-Pearson formulation
+### Optimal solution: Neyman-Pearson formulation
+* 此准则下的最优$\delta(x)$是上文最优化问题的最优解！
+* The optimal solution under the Neyman-Pearson formulation is given by the following fundamental lemma:
+* Neyman-Pearson Lemma: For the Neyman-Pearson design criterion, we have
+  * The following decision rule is optimal:
+  * 
+$$
+\begin{aligned}
+\hat{\delta}(x)&= 1 \text{ if } L(x)>\eta\\
+&= 0 \text{ if } L(x)<\eta\\
+&= \gamma(x) \text{ if } L(x) = \eta\\
+\end{aligned}
+$$
+
+here $\gamma(x) \in [0,1]$ and $\eta \geq 0$are chose **such that** $P_F(\hat{\delta}) = \alpha$
+
+* For every $\alpha\in(0,1)$ the said optimal decision rule exists. and we can always set $\gamma(x) = \gamma_0$ as a constant.
+  
+### Asymptotic behavior of likelihood ratio
+
+* 似然比检验在Bayesian和Neyman-Pearson formulations 中都扮演中心角色。通常，似然比检验的决策边界为
+
+$$
+L(x) = \frac{p_1(x)}{p_0(x)} <> \tau
+$$
+
+其中 $\tau > 0$ 是一个精确计算出的决策阈值！
+
+现在考虑随机向量 $\underline{X} = (X_1,\ldots,X_n), X_i\sim i.i.d\,p_0\text{ or }p_1$，则似然比定义为
+
+$$
+\begin{aligned}
+L(\underline{x}) &= \frac{p_1(\underline{x})}{p_0(\underline{x})} \\
+&= \frac{p_1(x_1,\ldots,x_n)}{p_0(x_1,\ldots,x_n)} \\
+&= \prod_{i=1}^{n}\frac{p_1(x_i)}{p_0(x_i)}
+\end{aligned}
+$$
+
+取对数+正则化之后，有
+
+$$
+\frac{1}{n}\log L(x) = \frac{1}{n}\sum_{i=1}^{n}\log \frac{p_1(x_i)}{p_0(x_i)}
+$$
+
+* 在 $H_0$ 成立时， 
+$$ \frac{1}{n}\log L(x)\to E_0 \log \frac{p_1(x_i)}{p_0(x_i)} \to -D(p_0\|p_1)$$
+* 在 $H_1$ 成立时， 
+$$ \frac{1}{n}\log L(x)\to E_1 \log \frac{p_1(x_i)}{p_0(x_i)} \to D(p_1\|p_0)$$
+
+**因此，当 $n\to\infty$ 时，似然比检验能以任意精度区分开 $H_0$ 和 $H_1$ !**
