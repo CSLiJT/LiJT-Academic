@@ -48,7 +48,7 @@ $$
 
 当 $\delta(x) = 1$ 时，可认为拒绝原假设 $H_0$，反之亦然。 $\delta(\cdot)$ 被当作假设检验的决策函数使用！
 
-另一种 **randomized** decision rule 则使用概率分布 $\hat{\delta}(x)=P(\delta=1\|X=x) $， 是拒绝$H_0$的概率！
+另一种 **randomized** decision rule 则使用概率分布 $\hat{\delta}(x)=P(\delta=1|X=x) $， 是拒绝$H_0$的概率！
 
 ### Bayesian formulation
 首先考虑两种假设的先验分布
