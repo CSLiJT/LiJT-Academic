@@ -160,3 +160,5 @@ $$
 $$
 \mathcal{X}_1 = \left\{ x\in \mathcal{X}: \frac{p_1(x)}{p_0(x)}\geq\frac{\pi_0}{\pi_1} \right\}
 $$
+
+## Optimal solution: Neyman-Pearson formulation
