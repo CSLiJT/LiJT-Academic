@@ -45,9 +45,9 @@ I am currently a junior major in **data science** in [**University of Science an
 
 ## Education Experience
 <dl>
-<dt>2015.9 - 2018.6</dt> <dd> <img src="./icon/gzez.png" width="60" align="left">&emsp; Guangzhou No.2 Middle School</dd>
+<dt>2015.9 - 2018.6</dt> <dd> <img src="./icon/gzez.png" width="40" align="left">&emsp; Guangzhou No.2 Middle School</dd>
 
-<dt>2018.9 - Present</dt> <dd> <img src="./icon/ustc.png" width="60" align="left">&emsp; University of Science and Technology of China</dd>
+<dt>2018.9 - Present</dt> <dd> <img src="./icon/ustc.png" width="40" align="left">&emsp; University of Science and Technology of China</dd>
 </dl>
 
 ## My personal CV
