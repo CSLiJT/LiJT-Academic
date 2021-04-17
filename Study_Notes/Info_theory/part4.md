@@ -28,6 +28,7 @@ $$
 
 ### Bayesian formulation
 首先考虑两种假设的先验分布
+
 $$
 \begin{aligned}
 \pi_0 &= P(X\sim p_0)\\
@@ -182,9 +183,9 @@ $$
 $$
 
 * 在 $H_0$ 成立时， 
-$$ \frac{1}{n}\log L(x)\to E_0 \log \frac{p_1(x_i)}{p_0(x_i)} \to -D(p_0\|p_1)$$
+$ \frac{1}{n}\log L(x)\to E_0 \log \frac{p_1(x_i)}{p_0(x_i)} \to -D(p_0\|p_1)$
 * 在 $H_1$ 成立时， 
-$$ \frac{1}{n}\log L(x)\to E_1 \log \frac{p_1(x_i)}{p_0(x_i)} \to D(p_1\|p_0)$$
+$ \frac{1}{n}\log L(x)\to E_1 \log \frac{p_1(x_i)}{p_0(x_i)} \to D(p_1\|p_0)$
 
 **因此，当 $n\to\infty$ 时，似然比检验能以任意精度区分开 $H_0$ 和 $H_1$ !**
 
