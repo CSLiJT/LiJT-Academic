@@ -81,6 +81,10 @@ $$
 p_i = D^{-l_i},\text{i.e.}, l_i = \log_D\frac{1}{p_i},\quad i=1,\ldots,|\mathcal{X}|
 $$
 
+## Key observations for binary case
+* Fact 1: The binary tree of an optimal binary prefix code has no unused leaves
+* Fact 2: there is an optimal binary prefix code for which the two least likely($p(x_i)$ is minimum) codewords differ only in their last digits
+
 
 
 
