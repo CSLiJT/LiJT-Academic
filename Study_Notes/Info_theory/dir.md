@@ -1,3 +1,4 @@
 # Directions
-* [Part II](./part2.md)
-* [Part IV](./part4.md)
+* [Part II Measure of Information](./part2.md)
+* [Part III Data Compression](./part2.md)
+* [Part IV Information Inference](./part4.md)
