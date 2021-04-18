@@ -69,6 +69,18 @@ $$
 \forall l_i\geq 1 \text{ integer}
 $$
 
+It can be proofed that 
+
+$$
+0 \leq D(p\|q)\leq -H(X) + \sum_{i}p_i l_i
+$$
+
+Thus we need to choose $\left\{ l_i \right\}$ such that
+
+$$
+p_i = D^{-l_i},\text{i.e.}, l_i = \log_D\frac{1}{p_i},\quad i=1,\ldots,|\mathcal{X}|
+$$
+
 
 
 
