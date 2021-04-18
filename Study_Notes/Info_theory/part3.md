@@ -36,3 +36,40 @@ Def uniquely decodable: A code is called $\sim$ if its **extension** is **nonsin
 
 ### prefix property
 * Def prefix code: A code is called $\sim$ or an instantaneous code if **no codeword is a prefix of any othr codeword.**
+
+All codes > Nonsingular > Uniquely decodable > Prefix
+
+* Property: A code $C$ is uniquely decodable if and only if 
+
+$$
+C^k(x_1,\ldots,x_n) = C(x_1),\ldots,C(x_k)
+$$
+
+is a one-to-one mapping from $\mathcal{X}^k$ to $\mathcal{D}^*$ for every $k\geq 1$
+
+## Kraft inequality for prefix codes
+* $D$: the size of the D-ary codeword alphabet
+* $l(x)$: length of $C(x)$
+* Theorem Kraft inequality:
+
+$$
+\sum_{x\in\mathcal{X}}D^{-l(x)}\leq 1
+$$
+
+## Kraft inequality for uniquely decodable codes
+* Theorem: For any uniquely decodable code, the codword lengths must satisfy the Kraft inequality, and the converse also holds.
+
+
+## Minimum expected length of codes
+* consider the constrained optimization problem:
+
+$$
+\min_{l_i, i=1,\ldots,|\mathcal{X}|}\sum_{i}p_i l_i\\
+\text{s.t.}\quad \sum_{i}D^{-l_i}\leq 1\\
+\forall l_i\geq 1 \text{ integer}
+$$
+
+
+
+
+To be continued...
