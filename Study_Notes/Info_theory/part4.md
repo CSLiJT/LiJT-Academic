@@ -259,7 +259,7 @@ $$
 r(\delta)\leq\min_{\lambda\geq 0}\pi_0^{1-\lambda}\pi_1^{\lambda}\exp(-n\log f(\lambda)^{-1}) + \min_{\mu\geq 0}\pi_0^{\mu}\pi_1^{1-\mu}\exp(-n\log g(\mu)^{-1})
 $$
 
-注意到 $f(\lambda) = g(1-\lambda)$，所以 $\lambda^* = 1-\mu^*$ 以及 $f(\lambda^*)=g(\mu^*)$.
+注意到 $f(\lambda) = g(1-\lambda)$，所以 $\lambda^\star = 1-\mu^\star$ 以及 $f(\lambda^{\star})=g(\mu^\star)$.
 
 将上式代入 $-\frac{1}{n}\log r(\delta)$，即得证。
 
