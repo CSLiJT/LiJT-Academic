@@ -189,4 +189,82 @@ $ \frac{1}{n}\log L(x)\to E_1 \log \frac{p_1(x_i)}{p_0(x_i)} \to D(p_1\|p_0)$
 
 **因此，当 $n\to\infty$ 时，似然比检验能以任意精度区分开 $H_0$ 和 $H_1$ !**
 
+### Asymptotic behavior: Bayesian formulation
+
+* Def
+ 
+  $$
+  D^* = \lim_{n\to\infty}-\frac{1}{n}\log r(\delta)
+  $$
+
+  其意义为，当 $n\to\infty$ 时，平均错误概率减小到0的速度
+
+### Chernoff information
+* Theorem
+
+$$
+D^* = -\min_{0\leq\lambda\leq 1}\log\left(\sum_{x\in\mathcal{X}}p_{0}^{\lambda}(x)p_{1}^{1-\lambda}(x) \right)
+$$
+
+此量称为 $(p_0,p_1)$ 的 Chernoff information.
+
+* Proof.
+  * 此定理的证明需要用到 tail probabilities 的渐进特征，如 $\lim_{n\to\infty}p_0(\log L(\underline{X})\geq \log\tau) $
+  * 证明太难了，估计要用三明治证法。下面只证其中一个方向: $\lim_{n\to\infty}-\frac{1}{n}\log r(\delta)\geq D^*$
+
+### Proof of Chernoff information
+#### Tail probability
+* $P(Y\geq a) \leq \min_{\lambda\geq 0}e^{-\lambda a}E[e^{\lambda Y}] $
+  * This is proved by applying **Markov’s inequality** to $e^{\lambda Y}$ , and optimizing over $\lambda\geq 0$.
+* 考虑令 $Y=$ 对数似然比：For $\underline{X} = (X_1,\ldots,X_n), X_i\sim p_0 $ or $p_1$, $Y = \log L(\underline{X} ) =\sum_{i=1}^n\log\frac{p_1(X_i) }{p_0(X_i)} $，代入并计算，有
+
+$$
+E[e^{\lambda Y}] = 
+\left\{
+\begin{aligned}
+& \left[\sum_{x\in\mathcal{X}}p_0^{1-\lambda}(x)p_1^{\lambda}(x) \right]^n &,X\sim p_0\\
+& \left[\sum_{x\in\mathcal{X}}p_0^{-\lambda}(x)p_1^{1+\lambda}(x) \right]^n &,X\sim p_1\\
+\end{aligned}
+\right.
+$$
+
+* 接下来考虑 I 型错误概率 $p_0(\mathcal{X}_1 )$，其中决策边界为
+
+$$
+\mathcal{X_1} = \left\{\underline{x}\in\mathcal{X}^n :Y\geq\log\frac{\pi_0}{\pi_1}\right\}
+$$
+
+  因此直接使用 Tail probability 的第一条结论，有
+
+$$
+\begin{aligned}
+p_0(\mathcal{X_1}) &= p_0(Y\geq\log\frac{\pi_0}{\pi_1})\\
+&\leq\min_{\lambda\geq 0}e^{-\lambda\log\frac{\pi_0}{\pi_1}}\left[\sum_{x\in\mathcal{X}}p_0^{1-\lambda}(x)p_1^{\lambda}(x) \right]^n\\
+\end{aligned}
+$$
+
+  然后将 $[\cdot]^n$ 部分放入指数项。II 型错误概率也以同样方式写出。（公式太长，不打了！），随后用上式放缩平均错误概率。
+记
+
+$$
+\begin{aligned}
+f(\lambda) &= \sum_{x\in\mathcal{X}}p_0^{1-\lambda}(x)p_1^{\lambda}(x), \lambda\geq 0\\
+g(\mu) &= \sum_{x\in\mathcal{X}}p_0^{\mu}(x)p_1^{1-\mu}(x),\mu\geq 0\\
+\end{aligned}
+$$
+
+则，
+
+$$
+r(\delta)\leq\min_{\lambda\geq 0}\pi_0^{1-\lambda}\pi_1^{\lambda}\exp(-n\log f(\lambda)^{-1}) + \min_{\mu\geq 0}\pi_0^{\mu}\pi_1^{1-\mu}\exp(-n\log g(\mu)^{-1})
+$$
+
+注意到 $f(\lambda) = g(1-\lambda)$，所以 $\lambda^* = 1-\mu^*$ 以及 $f(\lambda^*)=g(\mu^*)$.
+
+将上式代入 $-\frac{1}{n}\log r(\delta)$，即得证。
+
+### Asymptotic behavior: Neyman-Pearson formulation
+
+
+
 To be continued...
