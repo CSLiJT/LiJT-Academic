@@ -35,4 +35,16 @@
 
 ## Java 和 Cpp 在性能上的差异
 
+## 负载均衡
+
+## ARP解析
+
+## 顶级DNS有哪些
+
+## MySQL事务隔离、分表、3NF
+
+## Java1.8 特性
+
+## http 1.0 vs. 1.2 vs https
+
 to be continued...
