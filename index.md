@@ -27,7 +27,7 @@
 - [Welcome to Jiatong Li's homepage!](#welcome-to-jiatong-lis-homepage)
 - [Index](#index)
 - [About me](#about-me)
-- [Education Experience](#education-experience)
+- [My Experience](#my-experience)
 - [My personal CV](#my-personal-cv)
 - [About my research](#about-my-research)
   - [Cognitive diagnosis and its application in intelligent education](#cognitive-diagnosis-and-its-application-in-intelligent-education)
@@ -46,10 +46,18 @@
  
 I am currently a junior major in **data science** in [**University of Science and Technology of China**](https://www.ustc.edu.cn/) (USTC). I like delicious food, gym and classic musics! After studying in the school of data science, I found my interest in the research of machine learning, and I am now doing research on the use of deep learning in **cognitive diagnosis**, which is part of an intelligent education system. 
 
-## Education Experience
+## My Experience
 <dl>
-<dt>2018.9 - Present</dt> <dd> <img src="./icon/ustc.png" width="40" align="left">&emsp; University of Science and Technology of China</dd>
+<dt>2018.9 - Present</dt> 
+<dd> <img src="./icon/ustc.png" width="40" align="left">&emsp; Bachelor, University of Science and Technology of China, Hefei, Anhui Province, China
+</dd>
+
+<dt>2021.7 - 2021.10</dt> 
+<dd> <img src="./icon/alibaba.png" width="50" align="left">&emsp; Java Development Intenship, Alibaba Pictures, Shanghai, China
+</dd>
 </dl>
+
+
 
 ## My personal CV
 * English version: [click here](./My_personal_CV/LiJiatong.pdf)
