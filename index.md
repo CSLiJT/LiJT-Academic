@@ -53,11 +53,11 @@ I am currently a junior major in **data science** in [**University of Science an
 
 __2018.9 - Present__
 <img src="./icon/ustc.png" width="60" align="left">&emsp; Bachelor, University of Science and Technology of China, Hefei, Anhui Province, China
-<br />
+<br /><br /><br />
 
 __2021.7 - 2021.10__
 <img src="./icon/alibaba.png" width="60" align="left">&emsp; Java Development Intenship, Alibaba Pictures, Shanghai, China
-<br />
+<br /><br /><br />
 
 ---
 ## My personal CV
