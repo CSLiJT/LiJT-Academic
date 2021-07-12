@@ -57,10 +57,13 @@ __2018.9 - Present__
 __2021.7 - 2021.10__
 <img src="./icon/alibaba.png" width="50" align="left">&emsp; Java Development Intenship, Alibaba Pictures, Shanghai, China
 
+<br />
+
 ---
 ## My personal CV
 * English version: [click here](./My_personal_CV/LiJiatong.pdf)
 * Chinese version: [click here](./My_personal_CV/LiJiatong_Chinese.pdf)
+
 
 ---
 ## About my research
